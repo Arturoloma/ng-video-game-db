@@ -1,3 +1,4 @@
+import { SearchBarComponent } from './components/search-bar/search-bar.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
@@ -15,7 +16,8 @@ import { AppComponent } from './app.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SearchBarComponent
   ],
   imports: [
     BrowserModule,
