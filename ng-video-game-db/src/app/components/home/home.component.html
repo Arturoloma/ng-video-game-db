@@ -1,39 +1,23 @@
-<div class="filters">
-  <mat-form-field>
-    <mat-label>Sort</mat-label>
-    <mat-select
-      panelClass="sort-select"
-      [(ngModel)]="sort"
-    >
-      <mat-option value="name">Name</mat-option>
-      <mat-option value="-released">Released</mat-option>
-      <mat-option value="-added">Added</mat-option>
-      <mat-option value="-created">Created</mat-option>
-      <mat-option value="-updated">Updated</mat-option>
-      <mat-option value="-rating">Rating</mat-option>
-      <mat-option value="metacritic">Metacritic</mat-option>
-    </mat-select>
-  </mat-form-field>
-</div>
+<main>
+  <header class="filters">
+    <mat-form-field>
+      <mat-label>Sort</mat-label>
+      <mat-select
+        panelClass="sort-select"
+        [(ngModel)]="sort"
+      >
+        <mat-option value="name">Name</mat-option>
+        <mat-option value="-released">Released</mat-option>
+        <mat-option value="-added">Added</mat-option>
+        <mat-option value="-created">Created</mat-option>
+        <mat-option value="-updated">Updated</mat-option>
+        <mat-option value="-rating">Rating</mat-option>
+        <mat-option value="metacritic">Metacritic</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </header>
 
-<div class="games">
-  <div class="games__game game">
-    <div class="game__thumb thumb">
-      <img
-        src="https://i.imgur.com/0CVAiW5.png"
-        alt="thumbnail"
-        class="thumb__thumbnail"
-      />
-      <div class="thumb__description description">
-        <p class="description__name">Name</p>
-        <div class="description__platforms platforms">
-          <img
-            src="https://i.imgur.com/0CVAiW5.png"
-            alt="slug"
-            class="platforms__platform"
-          />
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+  <section class="games">
+    <app-thumb></app-thumb>
+  </section>
+</main>

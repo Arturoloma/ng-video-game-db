@@ -3,21 +3,21 @@ import { async, ComponentFixture, TestBed, waitForAsync } from '@angular/core/te
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { SearchBarComponent } from './search-bar.component';
+import { ThumbComponent } from './thumb.component';
 
-describe('SearchBarComponent', () => {
-  let component: SearchBarComponent;
-  let fixture: ComponentFixture<SearchBarComponent>;
+describe('ThumbComponent', () => {
+  let component: ThumbComponent;
+  let fixture: ComponentFixture<ThumbComponent>;
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ SearchBarComponent ]
+      declarations: [ ThumbComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SearchBarComponent);
+    fixture = TestBed.createComponent(ThumbComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,5 +1,3 @@
-import { HomeComponent } from './components/home/home.component';
-import { SearchBarComponent } from './components/search-bar/search-bar.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
@@ -14,12 +12,16 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
 
 import { AppComponent } from './app.component';
+import { ThumbComponent } from './components/thumb/thumb.component';
+import { HomeComponent } from './components/home/home.component';
+import { SearchBarComponent } from './components/search-bar/search-bar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SearchBarComponent,
-    HomeComponent
+    HomeComponent,
+    ThumbComponent
   ],
   imports: [
     BrowserModule,
